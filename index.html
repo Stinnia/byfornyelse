@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Byfornyelse</title>
+        <meta charcet="utf-8">
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+		 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		
+  <script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+  </script>
+
+
+		
+        <link href="style.css" rel="stylesheet" type="text/css">
+      
+    </head>
+    
+    <body>
+        <div class="wrapper">
+			
+           <article id="tabs" class="border border-success">
+				
+				
+					<ul id="stickynav">
+						<li><a href="#forside">Forside</a></li>
+						<li><a href="#statisk">Statisk data visualisering</a></li>
+						<li><a href="#dynamisk">Dynamisk data visualisering</a></li>
+						<li><a href="#bootstrap">Bootstrap</a> </li>
+						<li><a href="#jquery">jQuery UI</a></li>
+			
+			</ul> 
+					 
+
+			   <div id="forside">
+				  <h1 class="h2">Byfornyelse i Københavns Kommune</h1>
+				  <p class="h3 lead">Årene 1992-1996</p>
+				<iframe width="700" height="400" src="https://portal.opendata.dk/dataset/byfornyelse/resource/65dc455b-4cb8-409e-ba7a-2c63b22a9e44/view/6f7546e0-e8ef-4a8c-af51-b21528affd89" frameBorder="0"></iframe>
+				</div>
+			   
+			      <div id="statisk">
+				  <p class="h2">Statisk Data Visualisering</p>
+				  <p class="h3 lead">Årene 1992-1996</p>
+				
+				</div>
+			   
+			      <div id="dynamisk">
+				  <p class="h2">Dynamisk Data Visualisering</p>
+					<div id="bar-chart"></div>
+					<script src="bar-chart.js"></script>
+				</div>
+			   
+			      <div id="bootstrap">
+				  <p class="h2">Bootstrap Elementer</p>
+				  <p class="h3 lead">Årene 1992-1996</p>
+				
+				</div>
+			   
+			      <div id="jquery">
+				  <p class="h2">jQuery UI Elementer</p>
+					  <p class="h3 lead "><a class="tabs-link" href="http://jqueryui.com/tabs/">Clink here for "Tabs" link</a></p>
+					  <p class="text-center">"A single content area with multiple panels, each associated with a header in a list."</p>
+					  <p>Vores jQuery UI element er en widget, der hedder <strong>Tabs</strong>, som er vores navigations bar.</p>
+				
+				</div>
+	
+			</article>
+            
+        </div>
+		<footer class="item">&copy; Gruppe 1, 2018</footer>
+        
+    </body>
+    
+</html>
