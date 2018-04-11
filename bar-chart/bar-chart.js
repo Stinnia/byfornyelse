@@ -3,7 +3,7 @@ var h = 500;
 var m = 200;
 
 // creating the SVG and defining the scales for our bar chart
-var svg = d3.select("#bar-chart")
+var svg = d3.select("/bar-chart/#bar-chart")
 		.append("svg")
 		.attr("width", w) // width of the entire svg graphic
 		.attr("height", h),       
@@ -20,7 +20,7 @@ var g = svg.append("g")
 // GET THE DATA //
 /////////////////
 	
-d3.json("bar-chart.json", function(data) { // loading the data with the d3.json function
+d3.json("/bar-chart/bar-chart.json", function(data) { // loading the data with the d3.json function
     
 	console.log(data);
 	

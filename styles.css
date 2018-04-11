@@ -13,7 +13,7 @@ body {
 	margin: 0 auto; 
 	flex-wrap: wrap;
 	justify-content: space-around;
-
+	height: auto;
 }
 .h1 {
 	text-align: center;

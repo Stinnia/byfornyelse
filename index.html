@@ -3,7 +3,6 @@
     <head>
         <title>Byfornyelse</title>
         <meta charcet="utf-8">
-		<script src="https://d3js.org/d3.v4.min.js"></script>
 		 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>	
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -19,10 +18,7 @@
     $( "#tabs" ).tabs();
   } );
   </script>
-
-
-		
-        <link href="style.css" rel="stylesheet" type="text/css">
+	<link href="styles.css" rel="stylesheet" type="text/css">
       
     </head>
     
@@ -57,18 +53,45 @@
 			      <div id="dynamisk">
 				  <p class="h2">Dynamisk Data Visualisering</p>
 					<div id="bar-chart"></div>
-					<script src="bar-chart.js"></script>
+					<script src="bar-chart/bar-chart.js"></script>
 				</div>
 			   
 			      <div id="bootstrap">
-				  <p class="h2">Bootstrap Elementer</p>
-				  <p class="h3 lead">Årene 1992-1996</p>
+				  <p class="h2">Bootstrap Elementer</p>					  
+					  <p class="h3 lead">Hvilke elementer har vi taget fra Bootstrap?</p>
+					  
+					  <table class="table">
+						  <thead>
+							<tr>
+							  <th scope="col">Class</th>
+							  <th scope="col">Forklaring</th>
+							</tr>
+						  </thead>
+						  <tbody>
+							<tr>
+							  <th scope="row">border border-success</th>
+							  <td>Det grønne grænse</td>
+							</tr>
+							<tr>
+							  <th scope="row">h2/h3</th>
+							  <td>Bootstraps egne h2/h3 elementer</td>
+							</tr>
+							<tr>
+							  <th scope="row">lead</th>
+							  <td>Paragrafen skiller sig ud fra resten (her brugt på h3 overskrifterne, så h2 og h3 ikke ligner hinanden.</td>
+							</tr>
+							<tr>
+							  <th scope="row">table</th>
+							  <td>Table brugt til at lave det her tabel inde i Bootstrap siden.</td>
+							</tr>
+						  </tbody>
+						</table>
 				
 				</div>
 			   
 			      <div id="jquery">
 				  <p class="h2">jQuery UI Elementer</p>
-					  <p class="h3 lead "><a class="tabs-link" href="http://jqueryui.com/tabs/">Clink here for "Tabs" link</a></p>
+					  <p class="h3 lead"><a class="tabs-link" href="http://jqueryui.com/tabs/" target="_blank">Clink here for "Tabs" link</a></p>
 					  <p class="text-center">"A single content area with multiple panels, each associated with a header in a list."</p>
 					  <p>Vores jQuery UI element er en widget, der hedder <strong>Tabs</strong>, som er vores navigations bar.</p>
 				
